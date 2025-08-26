@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>olivepeople.ca landing page</title>
+    <style>
+      :root {
+        --bg: #68d4f5;
+        --text: #3d4826;
+        --accent: #666;
+        --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font);
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 700px;
+        width: 100%;
+      }
+
+      .logo {
+        max-width: 600px;
+        margin: 0 auto 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          font-size: 1.125rem;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .logo {
+          max-width: 300px;
+          margin: 0 auto 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./logo.png" alt="olivepeople.ca" class="logo" />
+      <h1>Thanks for visiting olivepeople.ca</h1>
+      <p>If the olives return, this'll be the place.</p>
+    </div>
+  </body>
+</html>
